@@ -58,4 +58,4 @@ This project is designed as a **first real-world cybersecurity programming proje
 Make sure you have **Python 3.8+** installed.
 
 ```bash
-python main.py
+python HPG_program.py
