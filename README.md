@@ -1,4 +1,7 @@
-# 🔐 Password Generator & Strength Checker (Python)
+# Password-Toolkit by Hadidou09
+---
+
+## 🔐 Password Generator & Strength Checker (Python)
 
 A Python-based cybersecurity utility that allows users to **generate secure passwords** and **check password strength** using clear security principles.
 
@@ -52,6 +55,12 @@ This project is designed as a **first real-world cybersecurity programming proje
 - This project is for **educational and learning purposes**, not production deployment
 
 ---
+
+## 👤 Author
+
+-Yahiaoui Mohamed Hadi Lamine (Hadidou09)
+---
+
 
 ## ▶️ How to Run
 
