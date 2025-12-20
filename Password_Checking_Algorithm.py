@@ -63,10 +63,16 @@ def single_password_check():
 
 
 def passwords_list_check():
-    filename = str(input('Please enter the password list path:'))
-    print("A text file was created for every passowrd with its strength check by the name \'strength_check.txt\'.")
-    file_handle1 = open(filename,'r')
+    while True:
+      try:
+        filename = str(input('Please enter the password list path:'))
+        file_handle1 = open(filename,'r')
+        break
+      except FileNotFoundError:
+        print("Sorry, no such file exist.")
+        continue
     file_handle2 = open("strength_check.txt",'w')# Creating a new list of passwords with their strength check
+    print("A text file was created for every passowrd with its strength check by the name \'strength_check.txt\'.")
     for password in file_handle1:# Assigning the passwords status for every password
         password = password.strip()
         if length_check(password) == False:
@@ -79,6 +85,7 @@ def passwords_list_check():
           else:
               strength = 'Weak'
               file_handle2.write(password+" ------> "+strength+"\n")
+
 
 
 
