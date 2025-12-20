@@ -4,6 +4,7 @@ data = [
     ['!','@','#','$','%','^','&','*',')','(','_','=','+','\'','\"','.',',',';',':','?','/','<','>','`','~','[',']','{','}','|']
 ]# All characters used for password generating
 
+
 def single_password_generator_with_symbols(length:int):
     password = '' # Aligning new password variable
     for i in range(length):
@@ -19,7 +20,6 @@ def single_password_generator_with_symbols(length:int):
     return print('Your password is:', password)
 
          
-
 def single_password_generator_without_symbols(length:int):
     password = '' # Aligning new password variable
     for i in range(length):
@@ -27,7 +27,6 @@ def single_password_generator_without_symbols(length:int):
         data_choice = data[0][number_choice]
         password = password + data_choice # Generating a password
     return print('Your password is:', password)
-
 
 
 def password_list_generator_with_length_with_symbols(length:int,number_of_passwords:int):
@@ -49,7 +48,6 @@ def password_list_generator_with_length_with_symbols(length:int,number_of_passwo
     return print(f'Your text file {filename} is ready with {number_of_passwords} passwords.')
 
 
-
 def password_list_generator_with_length_without_symbols(length:int,number_of_passwords:int):
     filename = input('Enter the full name of your file (with the extension if it is already created):') # Creating or choosing a file
     file_handle = open(filename,'w')
@@ -61,8 +59,6 @@ def password_list_generator_with_length_without_symbols(length:int,number_of_pas
         password = password + data_choice_2 # Generating a password
       file_handle.write(password + '\n') # Writing on the file
     return print(f'Your text file {filename} is ready with {number_of_passwords} passwords.')
-
-
 
 
 def password_list_generator_without_length_with_symbols(number_of_passwords:int):
@@ -85,8 +81,6 @@ def password_list_generator_without_length_with_symbols(number_of_passwords:int)
     return print(f'Your text file {filename} is ready with {number_of_passwords} passwords.')
 
 
-
-
 def password_list_generator_without_length_without_symbols(number_of_passwords:int):
     filename = input('Enter the full name of your file (with the extension if it is already created):') # Creating or choosing a file
     file_handle = open(filename,'w')
@@ -99,3 +93,4 @@ def password_list_generator_without_length_without_symbols(number_of_passwords:i
               password = password + data_choice # Generating a password
       file_handle.write(password + '\n') # Writing on the file
     return print(f'Your text file {filename} is ready with {number_of_passwords} passwords.')
+
