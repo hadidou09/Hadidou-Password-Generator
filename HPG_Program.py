@@ -2,6 +2,7 @@ import Password_Generation_Algorithm
 import Password_Checking_Algorithm
 # Importing the created modules 
 
+
 def password_list():
   while True: # Length choice loop
    choice_of_length = input('Do you want the passwords to have a specific length?\n[Y/N]:').upper()
@@ -42,10 +43,9 @@ def password_list():
       else:
         print("Invalid input, please try again.")
         continue # continuing symbols choice loop
-
-    break # Breaking the length choice loop 
+    break # Breaking the length choice loop
+     
    elif choice_of_length == 'N':
-
     while True: # Number of passwords loop
       try:
        number_of_passwords = int(input('Enter the number of  passwords you want:'))
@@ -68,7 +68,6 @@ def password_list():
       else:
         print("Invalid input, please try again.")
         continue # continuing symbols choice loop
-
     print("-"*100)
     break # Breaking the length choice loop
    
@@ -148,6 +147,4 @@ def main_program():
 
 if __name__ == '__main__': # executing the main_program when executing this module
   main_program()
-
-
 
